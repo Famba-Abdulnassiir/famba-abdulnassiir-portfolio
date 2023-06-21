@@ -1,0 +1,363 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    scroll-behavior: smooth;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    padding: 0;
+    
+}
+html{
+    overflow-x: hidden;
+}
+body{
+    background-color: #041C32;
+    color:#FFFFFF;
+}
+.header{
+   display: flex;
+   justify-content: space-between;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 10px;
+   padding:2rem 8%;
+   align-items: center;
+   z-index: 100;
+   background-color: #064663;
+}
+span{
+    color: #fac823;
+}
+.navbar{
+    font-size: 1.14rem;
+}
+
+.navbar a{
+    margin-right: 2rem;
+    transition: .4sec;
+}
+.navbar a:hover, a.active{
+    color:#fac823
+}
+main{
+    margin: 0px 6%;
+
+}
+p{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    padding: 5px 10px 5px 0px;
+    word-spacing: 2px;
+   
+}
+
+h1,h2,h3,h4,h5{
+    font-family: 'Fraunces', serif;
+}
+h3{
+    font-size: 1.2rem;
+    padding-bottom: 10px;
+}
+h1{
+    font-size: 2rem;
+}
+
+button{
+    font-family: 'Quicksand', sans-serif;
+    height: 2rem;
+    font-weight: bold;
+    border-radius: 20px;
+    background-color: #fac823;
+    padding: 5px 10px 5px 10px;
+    margin: 10px;
+    border: none;
+    box-shadow: 0 0 10px skyblue, 0 0 25px skyblue;
+}
+
+button:hover{
+    box-shadow: 0 0 20px skyblue, 0 0 50px skyblue;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: #FFFFFF;
+    transition: .4sec;
+
+}
+
+ul li{
+    color: #FFFFFF;
+    list-style-type: none;
+    padding: 7px;
+    
+}
+section{ 
+    min-height: 100vh;
+    padding-top:5rem;
+}
+
+
+/* .projects-sec,#blog-sec,#contact-sec,#foot-sec, .project-tile{
+    display: flex;
+    
+} */
+
+.social-links{
+    display: flex;
+    font-size: large;
+}
+
+#about-sec{
+    display: flex;
+    flex-direction: row;
+    justify-content:center ;
+    align-items: center;
+}
+
+.about-img{
+    width: 50%;
+    border-radius: 12rem 0rem 12rem 0rem;
+    background-color: #fac823;
+   
+}
+
+.projects-sec{
+    display: flex;
+    justify-content:space-between; 
+    align-items: center; 
+    flex-direction: row;   
+    gap:1rem;
+}
+
+.project-tile{
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    height: 28rem;
+    background-color: #064663;
+    border-radius: 15px;
+    
+}
+.project-cont{
+    padding: 1rem;
+}
+.project-tile h2, .blog-tile h2{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.project-img{
+    width: 100%;
+    height: auto;
+    border-radius: 15px 15px 0pc 0px;    
+}
+.img-bg{
+    border-radius: 15px 15px 0px 0px;
+    background-color: rgb(242, 245, 248);
+    height: 40%;
+
+}
+
+#contact-sec{
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.blog-sec{
+    display: flex;
+    flex-direction: column;  
+    justify-content: space-evenly;
+
+}
+.blog-tile{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+
+}
+
+.blog-img{
+    height: 92%;
+    margin-right:1rem;
+    width: 15rem;
+}
+
+.blog-tile p{
+    font-size: .87;
+    font-weight: 200;
+    padding-bottom: 1rem;
+
+}
+#contact-sec{
+    display: flex;
+}
+
+form input, textarea{
+    background-color: #064663;
+    border-radius: 5px;
+    width: 20rem;
+    height: 2rem;
+    margin: .5rem;
+    padding: 10px;
+
+}
+textarea{
+    height: 8rem;
+}
+
+form button{
+    margin-left: 1rem;
+}
+
+#foot-sec{
+    display: flex;    
+    background-color: #064663;
+    width: 100%;
+    padding: 1rem 4rem 1rem 1rem;
+    justify-content: space-around;
+}
+
+.footer-about{
+    flex:3;
+    padding-left: 6%
+}
+.footer-link{
+    flex:1;
+    padding-left: 100px;
+}
+.footer-contact{
+    flex: 1;
+}
+.divider{
+    height: 1.2rem;
+}
+
+/* Media Queries and responsiveness */
+@media screen and (max-width: 680px) {
+    .divider{
+        height: 0rem;
+    }
+    .header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 7rem;
+    }
+
+    #about-sec{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content:center ;
+        align-items: center;
+        gap:1rem
+    }    
+    .about-img{
+        width: 100%;
+        border-radius: 12rem 0rem 12rem 0rem;
+        background-color: #fac823;
+        padding-right: 10rem;
+        margin-right: 3rem;
+       
+    }
+
+    #foot-sec {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        text-align: left;
+        margin-top: 5rem;
+    }
+
+    .footer-about {
+        flex: 1;
+        margin-bottom: 1rem;
+    }
+
+    .footer-link {
+        flex: 1;
+        padding: 0;
+    }
+
+    .footer-contact {
+        flex: 1;
+    }
+
+    #contact-sec {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+
+    .blog-tile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .blog-img {
+        height: 40%;
+        margin-right: 1rem;
+        width: 95%;
+    }
+
+    .blog-tile p {
+        font-size: .8rem;
+        font-weight: 200;
+        padding-bottom: 1rem;
+
+    }
+
+    .blog-tile h2 {
+        font-size: 1.1rem;
+    }
+    .projects-sec{
+        display: flex;
+        justify-content:space-between; 
+        align-items: center; 
+        flex-direction: column;   
+        gap:.7rem;
+    }
+    
+     .project-tile{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+        background-color: #064663;
+        border-radius: 15px;
+        
+    }
+
+    
+    .project-cont{
+        padding: 1rem;
+    }
+    
+    .project-tile h2, .blog-tile h2{
+        font-size: 1rem;
+        margin-bottom: .3rem;
+    }
+    
+    .project-img{
+        width: 100%;
+        height: 13rem;
+        border-radius: 15px 15px 0pc 0px;    
+    }
+
+    section{ 
+        min-height: 100vh;
+        padding-top:8rem;
+    }
+   
+}
